@@ -15,7 +15,11 @@ describe('Orange HRM Tests', () => {
     genericField: ".oxd-input--active",
     dateField: "[placeholder='yyyy-dd-mm']",
     dateWrapper: ".--close",
-    submitButton: "[type='submit']"
+    submitButton: "[type='submit']",
+    nationalityButton: ".oxd-select-text [clear='false']",
+    maritalButton: ".oxd-select-text [clear='false']",
+    comboboxItem: ".oxd-select-dropdown > :nth-child(8)",
+    comboboxSecondItem:".oxd-select-dropdown > :nth-child(3)"
   }
 
   it.only('User Info Update - Sucess', () => {
@@ -33,7 +37,17 @@ describe('Orange HRM Tests', () => {
     cy.get(selectorsList.genericField).eq(5).clear().type('777test')
     cy.get(selectorsList.genericField).eq(6).clear().type('2025-03-10')
     cy.get(selectorsList.dateWrapper).click()
-    cy.get(selectorsList.submitButton).eq(0).click()
+    cy.get(selectorsList.submitButton).eq(0).click({ force: true })
+    cy.get('.oxd-text--toast-message')
+    cy.get('.oxd-toast-close')
+    cy.get(selectorsList.nationalityButton).eq(0).click()
+    cy.get(selectorsList.comboboxItem).click()
+    cy.get(selectorsList.maritalButton).eq(1).click()
+    cy.get(selectorsList.comboboxSecondItem)
+    cy.get('.oxd-select-dropdown > :nth-child(3)').click()
+    
+
+    
   })
   it('Login - Fail', () => {
     cy.visit('/auth/login')
