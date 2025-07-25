@@ -20,3 +20,23 @@ Durante uma mentoria de qualidade de software que participei, decidi aplicar os 
 
 ## Estrutura do projeto
 
+
+## Casos de teste incluídos
+
+### Login com sucesso
+
+- Visita a tela de login
+- Preenche usuário e senha válidos
+- Confirma redirecionamento para o dashboard
+
+### Login com falha
+
+- Usa usuário/senha inválidos
+- Verifica a exibição de alerta de erro
+
+### Atualização de informações pessoais
+
+- Navega até "My Info"
+- Atualiza nome, sobrenome, ID e data de nascimento
+- Seleciona nacionalidade e estado civil
+- Verifica mensagem de sucesso
