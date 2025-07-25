@@ -16,4 +16,4 @@ Durante uma mentoria de qualidade de software que participei, decidi aplicar os 
 
 - Cypress (framework de testes automatizados)
 - JavaScript (ES6)
-- Estrutura de dados com objeto de seletores para facilitar manutenção
+- Estrutura de dados com objeto de seletores para facilitar manutenção.
