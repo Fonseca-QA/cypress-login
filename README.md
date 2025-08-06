@@ -1,16 +1,32 @@
-# Projeto de Testes Automatizados com Cypress – OrangeHRM Demo
-
-Este projeto foi desenvolvido para praticar testes automatizados usando Cypress, testando o sistema OrangeHRM (versão de demonstração).
+# Projeto de Testes Automatizados com Cypress
 
 Foram criados testes para:
 
-- Login com credenciais válidas e inválidas
-- Navegação para a seção "My Info"
-- Atualização de informações pessoais como nome, sobrenome, data de nascimento e nacionalidade
+1. Login com credenciais válidas e inválidas
+2. Navegação para a seção "My Info"
+3. Atualização de informações pessoais como nome, sobrenome, data de nascimento e nacionalidade
+
+## Instalação
+```bash
+npm instal
+```
+> **Notas:**
+> É necessário ter **node** instalado
+
+## Rodando o projeto
+```bash
+# Abrir Cypress UI
+npx cypress open
+
+# Inicie a automação com o comando
+npx cypress run
+```
 
 ## Sobre o projeto
 
-Durante uma mentoria de qualidade de software que participei, decidi aplicar os conhecimentos adquiridos construindo testes em uma aplicação real. Como tenho experiência anterior no Exército com desempenho e processos, a área de QA fez muito sentido para mim. Este projeto é uma forma prática de continuar evoluindo na área.
+Este é um projeto inicial com foco em testes automatizados usando Cypress. A ideia principal foi validar o fluxo de login em um sistema de demonstração (OrangeHRM) e testar a edição de informações pessoais do usuário. 
+
+Foi uma forma prática de aplicar o que venho estudando e melhorar minhas habilidades com Cypress, organização de seletores e escrita de testes end-to-end.
 
 ## Tecnologias utilizadas
 
